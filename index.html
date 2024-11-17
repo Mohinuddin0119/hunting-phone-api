@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phone hunting Api</title>
     <!-- daisyui and tailwind -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer>
+  </head>
+  <body class="text-black">
+    <header>
+      <h1 class="text-5xl font-bold text-white text-center py-8">
+        Hunting phone
+      </h1>
+    </header>
+    <!-- main section start  -->
+    <main class="container mx-auto m-5">
+      <!-- search input -->
+      <section class="m-5 flex justify-center">
+        <input
+          type="text"
+          placeholder="search..."
+          id="input-field"
+          class="px-4 py-2 rounded-lg w-1/2 bg-white"
+        />
+        <div class="flex items-end">
+          <button class="bg-emerald-500 px-4 py-2">Search</button>
+        </div>
+      </section>
 
-    </footer>
+      <!-- search result -->
+      <section>
+        <div
+          id="phone-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+        ></div>
+      </section>
+    </main>
+    <!-- main section end -->
+    <footer></footer>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
