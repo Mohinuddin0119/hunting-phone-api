@@ -11,7 +11,10 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d5186fcd93.js" crossorigin="anonymous"></script>
   </head>
+  
   <body class="text-black">
     <header>
       <h1 class="text-5xl font-bold text-white text-center py-8">
@@ -23,13 +26,14 @@
       <!-- search input -->
       <section class="m-5 flex justify-center">
         <input
-          type="text"
-          placeholder="search..."
-          id="input-field"
-          class="px-4 py-2 rounded-lg w-1/2 bg-white"
+        id="input-field"
+        type="text"
+        placeholder="search your phone"
+        id="input-field"
+        class="relative px-4 py-2 md:text-2xl border-none rounded-lg w-1/2 bg-[#eee1e1]"
         />
-        <div class="flex items-end">
-          <button class="bg-emerald-500 px-4 py-2">Search</button>
+        <div class="absolute translate-x-24 md:translate-x-56 lg:translate-x-80">
+          <button onclick="handleSearch()" class="bg-emerald-500 px-8 py-2 md:py-3 rounded-lg ">Search</button>
         </div>
       </section>
 
