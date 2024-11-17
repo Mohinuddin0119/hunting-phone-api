@@ -13,6 +13,17 @@ const displayPhone = (phones) => {
   const phoneContainer = document.getElementById("phone-container");
   // clear phone container
   phoneContainer.textContent = '';
+  // when phone length is 12 above those added hidden class of classlist
+  const showAllContainer = document.getElementById('showAllContainer')
+  if(phones.length > 12){
+    showAllContainer.classList.remove('hidden')
+  }
+  else{
+    showAllContainer.classList.add('hidden')
+  }
+  // display only 12 item
+  phones = phones.slice(0,12)
+  // 
   phones.forEach((phone) => {
     console.log(phone)
     // step 2: create
