@@ -69,46 +69,46 @@ const showPhoneDetails = (phone) =>{
   const showPhoneDetailsContainer = document.getElementById('show_details_container')
   showPhoneDetailsContainer.innerHTML = `
   <div class='p-5 flex justify-center items-center'> 
-  <img src="${phone.image}" alt="">
+  <img src="${phone?.image}" alt="">
   </div>
   <h3 class="text-2xl text-black font-bold">${phone.name}</h3>
   <p >It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
   
   <div class='flex gap-3'>
   <h5 class="font-bold text-black">Storage: </h5>
-  <p>${phone.mainFeatures.storage}</p>
+  <p>${phone?.mainFeatures?.storage}</p>
   </div>
   
   <div class='flex gap-3'>
   <h5 class="font-bold text-black">Display Size: </h5>
-  <p>${phone.mainFeatures.displaySize}</p>
+  <p>${phone?.mainFeatures?.displaySize}</p>
   </div>
   
   <div class='flex gap-3'>
   <h5 class="font-bold text-black">Chipset: </h5>
-  <p>${phone.mainFeatures.chipSet}</p>
+  <p>${phone?.mainFeatures?.chipSet}</p>
   </div>
   
   <div class='flex gap-3'>
   <h5 class="font-bold text-black">Memory: </h5>
-  <p>${phone.mainFeatures.memory}</p>
+  <p>${phone?.mainFeatures?.memory}</p>
   </div>
   <div class='flex gap-3'>
   <h5 class="font-bold text-black">Slug:</h5> 
-  <p>${phone.slug}<p>
+  <p>${phone?.slug}<p>
   </div>
   <div class='flex gap-3'>
   <h5 class="font-bold text-black">Relase data: </h5>
-  <p>${phone.releaseDate}</p>
+  <p>${phone?.releaseDate}</p>
   </div>
   <div class='flex gap-3'>
   <h5 class="font-bold text-black">Brand: </h5>
-  <p>${phone.brand}</p>
+  <p>${phone?.brand}</p>
   </div>
   <div class='flex gap-3'>
   <h5 class="font-bold text-black">GPS: 
   </h5>
-  <p> AYes, with A-GPS, GLONASS, GALILEO, BDS, QZSS</p>
+  <p> ${phone?.others?.GPS || "No GPS"}</p>
   </div>
   
   
